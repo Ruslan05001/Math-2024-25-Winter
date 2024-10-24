@@ -1,1 +1,35 @@
-https://colab.research.google.com/github/dchorazkiewicz/Math-2024-25-Winter/blob/main/Notebooks_EN/01_Linear_Algebra/01_Matrices/LA_Matrix_basic_operations_en.ipynb#scrollTo=8dqL8lN-ptka&line=4&uniqifier=1
+1.import numpy as np
+
+# 1. Matrislerin toplanması
+A1 = np.array([[1, 2], [3, 4]])
+B1 = np.array([[5, 6], [7, 8]])
+
+# Matris toplama
+sum_matrices = A1 + B1
+print("A + B =")
+print(sum_matrices)
+
+# 2. Bir matrisin skalyar ile vurulması
+A2 = np.array([[4, 2], [12, 4]])
+k = 1/4
+
+# Skalyar vurma
+scalar_product = k * A2
+print("\nk * A =")
+print(scalar_product)
+
+# 3. Matrislerin çarpımı
+A3 = np.array([[3, 2], [2, 4]])
+B3 = np.array([[4, 1], [6, 4]])
+
+# A * B çarpımı
+A_dot_B = np.dot(A3, B3)
+
+# B * A çarpımı
+B_dot_A = np.dot(B3, A3)
+
+print("\nA * B =")
+print(A_dot_B)
+
+print("\nB * A =")
+print(B_dot_A)
